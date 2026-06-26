@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arifudin - Frontend Developer</title>
+    <meta name="description" content="Portofolio Arifudin - Mahasiswa Sistem Informasi & Frontend Developer. Lihat proyek web, skills, dan pengalaman saya.">
+    <meta name="keywords" content="Arifudin, frontend developer, web developer, portofolio, sistem informasi, HTML, CSS, JavaScript, Laravel">
+    <meta name="author" content="Arifudin">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Arifudin - Frontend Developer">
+    <meta property="og:description" content="Portofolio Arifudin - Mahasiswa Sistem Informasi & Frontend Developer.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://arifudin.my.id">
+    <meta property="og:image" content="arif.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Arifudin - Frontend Developer">
+    <meta name="twitter:description" content="Portofolio Arifudin - Mahasiswa Sistem Informasi & Frontend Developer.">
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">Arifudin</a>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Beranda</a>
+                <a href="#about" class="nav-link">Tentang</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#portfolio" class="nav-link">Portofolio</a>
+                <a href="#experience" class="nav-link">Pengalaman</a>
+                <a href="#contact" class="nav-link">Kontak</a>
+            </div>
+            <div class="nav-actions">
+                <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-image reveal">
+                <div class="hero-img-wrapper">
+                    <img src="arif.jpg" alt="Arifudin">
+                </div>
+            </div>
+            <div class="hero-text reveal">
+                <p class="hero-greeting">Halo, saya</p>
+                <h1 class="hero-name">Arifudin</h1>
+                <h2 class="hero-title">Saya <span class="typing-text"></span><span class="cursor">|</span></h2>
+                <p class="hero-desc">Mahasiswa Sistem Informasi yang fokus pada pengembangan website modern. Saya menciptakan pengalaman digital yang bersih, responsif, dan user-friendly.</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">Lihat Portofolio</a>
+                    <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about section" id="about">
+        <div class="container">
+            <h2 class="section-title reveal">Tentang Saya</h2>
+            <div class="about-content reveal">
+                <div class="about-text">
+                    <p>Saya <strong>Arifudin</strong>, mahasiswa <strong>Sistem Informasi institut teknologi bisnis banten</strong> yang memiliki ketertarikan besar di dunia pengembangan web. Saat ini saya fokus mempelajari <strong>Frontend Development</strong> dan membangun fondasi yang kuat di ekosistem web modern.</p>
+                    <p>Saya percaya bahwa website yang baik adalah perpaduan antara fungsionalitas yang solid dan desain yang menarik. Setiap baris kode yang saya tulis adalah upaya untuk menciptakan pengalaman digital yang bermakna bagi penggunanya.</p>
+                    <p>Di luar coding, saya menikmati mengeksplorasi teknologi baru, membaca dokumentasi, dan berbagi pengetahuan dengan sesama developer.</p>
+                </div>
+                <div class="about-info">
+                    <div class="info-item">
+                        <span class="info-label">Nama</span>
+                        <span class="info-value">Arifudin</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Prodi</span>
+                        <span class="info-value">Sistem Informasi</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Fokus</span>
+                        <span class="info-value">Frontend Development</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Email</span>
+                        <span class="info-value">arifrif45368@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Status</span>
+                        <span class="info-value">Mahasiswa</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <h2 class="section-title reveal">Skills</h2>
+            <p class="section-subtitle reveal">Teknologi yang saya kuasai dan pelajari</p>
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                    <h3>HTML</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="90%"></div></div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                    <h3>CSS</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="85%"></div></div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fab fa-js"></i></div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="75%"></div></div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fab fa-php"></i></div>
+                    <h3>PHP</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="70%"></div></div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fab fa-laravel"></i></div>
+                    <h3>Laravel</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="65%"></div></div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h3>MySQL</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="75%"></div></div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fab fa-github"></i></div>
+                    <h3>Git & GitHub</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="80%"></div></div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+                    <h3>Bootstrap</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="85%"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio section" id="portfolio">
+        <div class="container">
+            <h2 class="section-title reveal">Portofolio</h2>
+            <p class="section-subtitle reveal">Beberapa proyek yang pernah saya kerjakan</p>
+            <div class="portfolio-grid">
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <img src="perpustakaan.png" alt="Tampilan Sistem Perpustakaan Laravel - Manajemen Buku Digital">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Sistem Perpustakaan Laravel</h3>
+                        <p>Aplikasi manajemen perpustakaan berbasis Laravel dengan fitur CRUD buku, anggota, dan peminjaman.</p>
+                        <div class="project-tags">
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <img src="project-sekolah.svg" alt="Mockup Website Profil Sekolah Nurul Huda">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Website Sekolah Nurul Huda</h3>
+                        <p>Website profil sekolah lengkap dengan informasi akademik, galeri, dan sistem pengumuman.</p>
+                        <div class="project-tags">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <img src="sekolah.png" alt="Platform AI Ibnovasi untuk Inovasi Pembelajaran Berbasis AI">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI Ibnovasi</h3>
+                        <p>Platform inovasi berbasis AI untuk mendukung pembelajaran dan pengembangan teknologi di lingkungan sekolah.</p>
+                        <div class="project-tags">
+                            <span>Artificial Intelligence</span>
+                            <span>Machine Learning</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="experience section" id="experience">
+        <div class="container">
+            <h2 class="section-title reveal">Pengalaman Belajar</h2>
+            <p class="section-subtitle reveal">Perjalanan saya dalam dunia pemrograman</p>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023</span>
+                        <h3>Mulai Belajar HTML & CSS</h3>
+                        <p>Memulai perjalanan dengan dasar-dasar web development. Membuat halaman web sederhana dan memahami struktur HTML serta styling CSS.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023</span>
+                        <h3>Belajar JavaScript</h3>
+                        <p>Mendalami JavaScript untuk memberikan interaktivitas pada website. Mulai dari DOM manipulation hingga konsep dasar programming.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024</span>
+                        <h3>Belajar PHP & MySQL</h3>
+                        <p>Mulai belajar backend development dengan PHP dan database MySQL. Membangun aplikasi web dinamis dengan konsep CRUD.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024</span>
+                        <h3>Belajar Laravel</h3>
+                        <p>Mempelajari framework Laravel untuk pengembangan web yang lebih terstruktur. Membangun project sistem informasi perpustakaan.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025</span>
+                        <h3>Memperdalam Frontend</h3>
+                        <p>Fokus pada Frontend Development dengan mempelajari CSS Framework, responsive design, dan modern JavaScript.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Sekarang</span>
+                        <h3>Terus Belajar & Berkarya</h3>
+                        <p>Terus mengasah skill dan mengerjakan berbagai project untuk memperkuat portofolio sebagai Frontend Developer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <h2 class="section-title reveal">Hubungi Saya</h2>
+            <p class="section-subtitle reveal">Punya pertanyaan atau ingin bekerja sama? Silakan kirim pesan!</p>
+            <div class="contact-content reveal">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" placeholder="Nama Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" placeholder="Email Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" rows="5" placeholder="Pesan Anda" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Kirim Pesan <i class="fas fa-paper-plane"></i></button>
+                </form>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p><a href="https://wa.me/6281410230548" target="_blank" class="contact-link">+62 814-1023-0548</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:arifrif45368@gmail.com" class="contact-link">arifrif45368@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Lokasi</h4>
+                            <p>Serang Banten Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-code"></i>
+                        <div>
+                            <h4>Tersedia untuk</h4>
+                            <p>Freelance & Fulltime</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-social">
+                <a href="https://wa.me/6281410230548" target="_blank" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://github.com/arifrif45368-arch" target="_blank" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/arifudin-nh-a20a363a9" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:arifrif45368@gmail.com" class="social-link" aria-label="Email">
+  <i class="fas fa-envelope"></i>
+</a>
+            </div>
+            <p class="footer-text">&copy; 2025 Arifudin. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating -->
+    <a href="https://wa.me/6281410230548" target="_blank" class="wa-float" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
