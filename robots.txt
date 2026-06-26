@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://arifudinnh.github.io/portofolioarif/sitemap.xml
