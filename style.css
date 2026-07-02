@@ -520,7 +520,7 @@ img {
 .project-img {
     position: relative;
     overflow: hidden;
-    aspect-ratio: 3/2;
+    aspect-ratio: 2/1;
 }
 
 .project-img img {

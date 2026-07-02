@@ -123,7 +123,7 @@ function animateSkillBars() {
         const rect = bar.getBoundingClientRect();
         const isVisible = rect.top < window.innerHeight - 50;
 
-        if (isVisible && bar.style.width === '0px' || bar.style.width === '') {
+        if (isVisible && (bar.style.width === '0px' || bar.style.width === '')) {
             const targetWidth = bar.getAttribute('data-progress');
             bar.style.width = targetWidth;
         }
