@@ -62,7 +62,7 @@ darkToggle.addEventListener('click', () => {
 
 /* ===== TYPING EFFECT ===== */
 const typingText = document.querySelector('.typing-text');
-const words = ['Frontend Developer', 'Mahasiswa Sistem Informasi', 'Web Enthusiast'];
+const words = ['Web Development', 'Mahasiswa Sistem Informasi', 'Web Enthusiast'];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;

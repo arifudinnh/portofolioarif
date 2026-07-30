@@ -520,13 +520,16 @@ img {
 .project-img {
     position: relative;
     overflow: hidden;
-    aspect-ratio: 2/1;
+    background: var(--bg-alt);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .project-img img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    display: block;
     transition: transform 0.5s ease;
 }
 
