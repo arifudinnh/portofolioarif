@@ -58,14 +58,19 @@
         <div class="container nav-container">
             <a href="#" class="nav-logo">Arifudin</a>
             <div class="nav-menu" id="navMenu">
-                <a href="#home" class="nav-link">Beranda</a>
-                <a href="#about" class="nav-link">Tentang</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#portfolio" class="nav-link">Portofolio</a>
-                <a href="#experience" class="nav-link">Pengalaman</a>
-                <a href="#contact" class="nav-link">Kontak</a>
+                <a href="#home" class="nav-link" data-i18n="nav.home">Beranda</a>
+                <a href="#about" class="nav-link" data-i18n="nav.about">Tentang</a>
+                <a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a>
+                <a href="#portfolio" class="nav-link" data-i18n="nav.portfolio">Portofolio</a>
+                <a href="#experience" class="nav-link" data-i18n="nav.experience">Pengalaman</a>
+                <a href="#certificates" class="nav-link" data-i18n="nav.certificates">Sertifikat</a>
+                <a href="#contact" class="nav-link" data-i18n="nav.contact">Kontak</a>
             </div>
             <div class="nav-actions">
+                <select id="langToggle" class="lang-select" aria-label="Pilih bahasa / Select language">
+                    <option value="id">ID</option>
+                    <option value="en">EN</option>
+                </select>
                 <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">
                     <i class="fas fa-moon"></i>
                 </button>
@@ -87,13 +92,13 @@
                 </div>
             </div>
             <div class="hero-text reveal">
-                <p class="hero-greeting">Halo, saya</p>
+                <p class="hero-greeting" data-i18n="hero.greeting">Halo, saya</p>
                 <h1 class="hero-name">Arifudin</h1>
-                <h2 class="hero-title">Saya <span class="typing-text"></span><span class="cursor">|</span></h2>
-                <p class="hero-desc">Mahasiswa Sistem Informasi yang fokus pada pengembangan website modern. Saya menciptakan pengalaman digital yang bersih, responsif, dan user-friendly.</p>
+                <h2 class="hero-title"><span data-i18n="hero.title">Saya</span> <span class="typing-text"></span><span class="cursor">|</span></h2>
+                <p class="hero-desc" data-i18n="hero.desc">Mahasiswa Sistem Informasi yang fokus pada pengembangan website modern. Saya menciptakan pengalaman digital yang bersih, responsif, dan user-friendly.</p>
                 <div class="hero-buttons">
-                    <a href="#portfolio" class="btn btn-primary">Lihat Portofolio</a>
-                    <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+                    <a href="#portfolio" class="btn btn-primary" data-i18n="hero.btnPortfolio">Lihat Portofolio</a>
+                    <a href="#contact" class="btn btn-secondary" data-i18n="hero.btnContact">Hubungi Saya</a>
                 </div>
             </div>
         </div>
@@ -102,33 +107,33 @@
     <!-- About -->
     <section class="about section" id="about">
         <div class="container">
-            <h2 class="section-title reveal">Tentang Saya</h2>
+            <h2 class="section-title reveal" data-i18n="about.title">Tentang Saya</h2>
             <div class="about-content reveal">
                 <div class="about-text">
-                    <p>Saya <strong>Arifudin</strong>, mahasiswa <strong>Sistem Informasi Institut Teknologi Bisnis Banten</strong> yang memiliki ketertarikan besar di dunia pengembangan web. Saat ini saya fokus mempelajari <strong>Web Development</strong> dan membangun fondasi yang kuat di ekosistem web modern.</p>
-                    <p>Saya percaya bahwa website yang baik adalah perpaduan antara fungsionalitas yang solid dan desain yang menarik. Setiap baris kode yang saya tulis adalah upaya untuk menciptakan pengalaman digital yang bermakna bagi penggunanya.</p>
-                    <p>Di luar coding, saya menikmati mengeksplorasi teknologi baru, membaca dokumentasi, dan berbagi pengetahuan dengan sesama developer.</p>
+                    <p data-i18n="about.p1">Saya <strong>Arifudin</strong>, mahasiswa <strong>Sistem Informasi Institut Teknologi Bisnis Banten</strong> yang memiliki ketertarikan besar di dunia pengembangan web. Saat ini saya fokus mempelajari <strong>Web Development</strong> dan membangun fondasi yang kuat di ekosistem web modern.</p>
+                    <p data-i18n="about.p2">Saya percaya bahwa website yang baik adalah perpaduan antara fungsionalitas yang solid dan desain yang menarik. Setiap baris kode yang saya tulis adalah upaya untuk menciptakan pengalaman digital yang bermakna bagi penggunanya.</p>
+                    <p data-i18n="about.p3">Di luar coding, saya menikmati mengeksplorasi teknologi baru, membaca dokumentasi, dan berbagi pengetahuan dengan sesama developer.</p>
                 </div>
                 <div class="about-info">
                     <div class="info-item">
-                        <span class="info-label">Nama</span>
+                        <span class="info-label" data-i18n="about.name">Nama</span>
                         <span class="info-value">Arifudin</span>
                     </div>
                     <div class="info-item">
-                        <span class="info-label">Prodi</span>
-                        <span class="info-value">Sistem Informasi</span>
+                        <span class="info-label" data-i18n="about.major">Prodi</span>
+                        <span class="info-value" data-i18n="about.majorValue">Sistem Informasi</span>
                     </div>
                     <div class="info-item">
-                        <span class="info-label">Fokus</span>
-                        <span class="info-value">Web Development</span>
+                        <span class="info-label" data-i18n="about.focus">Fokus</span>
+                        <span class="info-value" data-i18n="about.focusValue">Web Development</span>
                     </div>
                     <div class="info-item">
-                        <span class="info-label">Email</span>
+                        <span class="info-label" data-i18n="about.email">Email</span>
                         <span class="info-value">arifrif45368@gmail.com</span>
                     </div>
                     <div class="info-item">
-                        <span class="info-label">Status</span>
-                        <span class="info-value">Mahasiswa</span>
+                        <span class="info-label" data-i18n="about.status">Status</span>
+                        <span class="info-value" data-i18n="about.statusValue">Mahasiswa</span>
                     </div>
                 </div>
             </div>
@@ -138,8 +143,8 @@
     <!-- Skills -->
     <section class="skills section" id="skills">
         <div class="container">
-            <h2 class="section-title reveal">Skills</h2>
-            <p class="section-subtitle reveal">Teknologi yang saya kuasai dan pelajari</p>
+            <h2 class="section-title reveal" data-i18n="skills.title">Skills</h2>
+            <p class="section-subtitle reveal" data-i18n="skills.subtitle">Teknologi yang saya kuasai dan pelajari</p>
             <div class="skills-grid">
                 <div class="skill-card reveal">
                     <div class="skill-icon"><i class="fab fa-html5"></i></div>
@@ -188,19 +193,19 @@
     <!-- Portfolio -->
     <section class="portfolio section" id="portfolio">
         <div class="container">
-            <h2 class="section-title reveal">Portofolio</h2>
-            <p class="section-subtitle reveal">Beberapa proyek yang pernah saya kerjakan</p>
+            <h2 class="section-title reveal" data-i18n="portfolio.title">Portofolio</h2>
+            <p class="section-subtitle reveal" data-i18n="portfolio.subtitle">Beberapa proyek yang pernah saya kerjakan</p>
             <div class="portfolio-grid">
                 <div class="project-card reveal">
                     <div class="project-img">
                         <img src="pesawat.png" alt="Tampilan Aplikasi Pemesanan Tiket Pesawat" loading="lazy" width="600" height="375">
                         <div class="project-overlay">
-                            <a href="https://github.com/arifudinnh/tiketpesawat2026-sms6" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/arifudinnh/tiketpesawat2026-sms6" target="_blank" class="project-link" aria-label="View project"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Pemesanan Tiket Pesawat</h3>
-                        <p>Aplikasi pemesanan tiket pesawat dengan fitur pencarian jadwal, pemilihan kursi, dan pembayaran online.</p>
+                        <h3 data-i18n="portfolio.p1title">Pemesanan Tiket Pesawat</h3>
+                        <p data-i18n="portfolio.p1desc">Aplikasi pemesanan tiket pesawat dengan fitur pencarian jadwal, pemilihan kursi, dan pembayaran online.</p>
                         <div class="project-tags">
                             <span>TypeScript</span>
                             <span>React</span>
@@ -217,8 +222,8 @@
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Sistem Perpustakaan</h3>
-                        <p>Aplikasi manajemen perpustakaan berbasis web dengan fitur CRUD buku, anggota, dan peminjaman.</p>
+                        <h3 data-i18n="portfolio.p2title">Sistem Perpustakaan</h3>
+                        <p data-i18n="portfolio.p2desc">Aplikasi manajemen perpustakaan berbasis web dengan fitur CRUD buku, anggota, dan peminjaman.</p>
                         <div class="project-tags">
                             <span>Laravel</span>
                             <span>PHP</span>
@@ -235,8 +240,8 @@
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Toko E-commerce</h3>
-                        <p>Aplikasi toko online dengan fitur katalog produk, keranjang belanja, checkout, dan manajemen stok barang.</p>
+                        <h3 data-i18n="portfolio.p3title">Toko E-commerce</h3>
+                        <p data-i18n="portfolio.p3desc">Aplikasi toko online dengan fitur katalog produk, keranjang belanja, checkout, dan manajemen stok barang.</p>
                         <div class="project-tags">
                             <span>HTML</span>
                             <span>CSS</span>
@@ -251,55 +256,76 @@
     <!-- Experience -->
     <section class="experience section" id="experience">
         <div class="container">
-            <h2 class="section-title reveal">Pengalaman Belajar</h2>
-            <p class="section-subtitle reveal">Perjalanan saya dalam dunia pemrograman</p>
+            <h2 class="section-title reveal" data-i18n="exp.title">Pengalaman Belajar</h2>
+            <p class="section-subtitle reveal" data-i18n="exp.subtitle">Perjalanan saya dalam dunia pemrograman</p>
             <div class="timeline">
                 <div class="timeline-item reveal">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <span class="timeline-date">2023</span>
-                        <h3>Mulai Belajar HTML & CSS</h3>
-                        <p>Memulai perjalanan dengan dasar-dasar web development. Membuat halaman web sederhana dan memahami struktur HTML serta styling CSS.</p>
+                        <h3 data-i18n="exp.t1title">Mulai Belajar HTML & CSS</h3>
+                        <p data-i18n="exp.t1desc">Memulai perjalanan dengan dasar-dasar web development. Membuat halaman web sederhana dan memahami struktur HTML serta styling CSS.</p>
                     </div>
                 </div>
                 <div class="timeline-item reveal">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <span class="timeline-date">2023</span>
-                        <h3>Belajar JavaScript</h3>
-                        <p>Mendalami JavaScript untuk memberikan interaktivitas pada website. Mulai dari DOM manipulation hingga konsep dasar programming.</p>
+                        <h3 data-i18n="exp.t2title">Belajar JavaScript</h3>
+                        <p data-i18n="exp.t2desc">Mendalami JavaScript untuk memberikan interaktivitas pada website. Mulai dari DOM manipulation hingga konsep dasar programming.</p>
                     </div>
                 </div>
                 <div class="timeline-item reveal">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <span class="timeline-date">2024</span>
-                        <h3>Belajar PHP & MySQL</h3>
-                        <p>Mulai belajar backend development dengan PHP dan database MySQL. Membangun aplikasi web dinamis dengan konsep CRUD.</p>
+                        <h3 data-i18n="exp.t3title">Belajar PHP & MySQL</h3>
+                        <p data-i18n="exp.t3desc">Mulai belajar backend development dengan PHP dan database MySQL. Membangun aplikasi web dinamis dengan konsep CRUD.</p>
                     </div>
                 </div>
                 <div class="timeline-item reveal">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <span class="timeline-date">2024</span>
-                        <h3>Belajar Laravel</h3>
-                        <p>Mempelajari framework Laravel untuk pengembangan web yang lebih terstruktur. Membangun project sistem informasi perpustakaan.</p>
+                        <h3 data-i18n="exp.t4title">Belajar Laravel</h3>
+                        <p data-i18n="exp.t4desc">Mempelajari framework Laravel untuk pengembangan web yang lebih terstruktur. Membangun project sistem informasi perpustakaan.</p>
                     </div>
                 </div>
                 <div class="timeline-item reveal">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <span class="timeline-date">2025</span>
-                        <h3>Memperdalam Web Development</h3>
-                        <p>Fokus pada Web Development dengan mempelajari CSS Framework, responsive design, dan modern JavaScript.</p>
+                        <h3 data-i18n="exp.t5title">Memperdalam Web Development</h3>
+                        <p data-i18n="exp.t5desc">Fokus pada Web Development dengan mempelajari CSS Framework, responsive design, dan modern JavaScript.</p>
                     </div>
                 </div>
                 <div class="timeline-item reveal">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">Sekarang</span>
-                        <h3>Terus Belajar & Berkarya</h3>
-                        <p>Terus mengasah skill dan mengerjakan berbagai project untuk memperkuat portofolio sebagai Web Development.</p>
+                        <span class="timeline-date" data-i18n="exp.now">Sekarang</span>
+                        <h3 data-i18n="exp.t6title">Terus Belajar & Berkarya</h3>
+                        <p data-i18n="exp.t6desc">Terus mengasah skill dan mengerjakan berbagai project untuk memperkuat portofolio sebagai Web Development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates -->
+    <section class="certificates section" id="certificates">
+        <div class="container">
+            <h2 class="section-title reveal" data-i18n="cert.title">Sertifikat</h2>
+            <p class="section-subtitle reveal" data-i18n="cert.subtitle">Sertifikat pembelajaran yang saya peroleh</p>
+            <div class="cert-grid">
+                <div class="cert-card reveal">
+                    <a href="sertifikat-ibm.png" target="_blank" class="cert-img" data-i18n-aria="cert.aria">
+                        <img src="sertifikat-ibm.png" alt="Sertifikat IT - AI Agent for Programming dari IBM SkillsBuild" loading="lazy" width="600" height="375">
+                    </a>
+                    <div class="cert-info">
+                        <h3>IT - AI Agent for Programming</h3>
+                        <p class="cert-org"><i class="fas fa-award"></i> IBM SkillsBuild University Education - Hacktiv8 Indonesia</p>
+                        <p class="cert-detail" data-i18n="cert.detail">9 jam pelatihan | Sertifikat Penyelesaian</p>
+                        <span class="cert-date"><i class="far fa-calendar-alt"></i> 28 Jul 2026</span>
                     </div>
                 </div>
             </div>
@@ -309,20 +335,20 @@
     <!-- Contact -->
     <section class="contact section" id="contact">
         <div class="container">
-            <h2 class="section-title reveal">Hubungi Saya</h2>
-            <p class="section-subtitle reveal">Punya pertanyaan atau ingin bekerja sama? Silakan kirim pesan!</p>
+            <h2 class="section-title reveal" data-i18n="contact.title">Hubungi Saya</h2>
+            <p class="section-subtitle reveal" data-i18n="contact.subtitle">Punya pertanyaan atau ingin bekerja sama? Silakan kirim pesan!</p>
             <div class="contact-content reveal">
                 <form class="contact-form" id="contactForm">
                     <div class="form-group">
-                        <input type="text" name="name" id="name" placeholder="Nama Anda" required>
+                        <input type="text" name="name" id="name" placeholder="Nama Anda" data-i18n-ph="contact.namePh" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" name="email" id="email" placeholder="Email Anda" required>
+                        <input type="email" name="email" id="email" placeholder="Email Anda" data-i18n-ph="contact.emailPh" required>
                     </div>
                     <div class="form-group">
-                        <textarea name="message" id="message" rows="5" placeholder="Pesan Anda" required></textarea>
+                        <textarea name="message" id="message" rows="5" placeholder="Pesan Anda" data-i18n-ph="contact.msgPh" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Kirim Pesan <i class="fas fa-paper-plane"></i></button>
+                    <button type="submit" class="btn btn-primary"><span data-i18n="contact.send">Kirim Pesan</span> <i class="fas fa-paper-plane"></i></button>
                 </form>
                 <div class="contact-info">
                     <div class="contact-item">
@@ -342,14 +368,14 @@
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
-                            <h4>Lokasi</h4>
+                            <h4 data-i18n="contact.location">Lokasi</h4>
                             <p>Serang Banten Indonesia</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-code"></i>
                         <div>
-                            <h4>Tersedia untuk</h4>
+                            <h4 data-i18n="contact.available">Tersedia untuk</h4>
                             <p>Freelance & Fulltime</p>
                         </div>
                     </div>
@@ -369,7 +395,7 @@
                     <i class="fas fa-envelope"></i>
                 </a>
             </div>
-            <p class="footer-text">&copy; 2025 Arifudin. Semua hak dilindungi.</p>
+            <p class="footer-text" data-i18n="footer.rights">&copy; 2025 Arifudin. Semua hak dilindungi.</p>
         </div>
     </footer>
 

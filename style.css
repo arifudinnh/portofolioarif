@@ -209,6 +209,25 @@ img {
     color: var(--primary);
 }
 
+.lang-select {
+    background: var(--bg);
+    border: 2px solid var(--border);
+    color: var(--text);
+    border-radius: 50px;
+    padding: 8px 14px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    outline: none;
+    transition: all var(--transition);
+}
+
+.lang-select:hover,
+.lang-select:focus {
+    border-color: var(--primary);
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -680,6 +699,93 @@ img {
     line-height: 1.6;
 }
 
+/* ===== CERTIFICATES ===== */
+.certificates {
+    background: var(--bg);
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.cert-card {
+    background: var(--bg-alt);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    transition: all var(--transition);
+    max-width: 520px;
+}
+
+.cert-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--primary);
+}
+
+.cert-img {
+    display: block;
+    overflow: hidden;
+    background: var(--bg);
+}
+
+.cert-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.cert-card:hover .cert-img img {
+    transform: scale(1.05);
+}
+
+.cert-info {
+    padding: 24px;
+}
+
+.cert-info h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+}
+
+.cert-org {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 4px;
+}
+
+.cert-org i {
+    color: var(--primary);
+    margin-right: 4px;
+}
+
+.cert-detail {
+    font-size: 0.85rem;
+    color: var(--gray-light);
+    margin-bottom: 14px;
+}
+
+.cert-date {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--primary);
+    background: var(--primary-bg);
+    padding: 4px 14px;
+    border-radius: 50px;
+}
+
+.cert-date i {
+    margin-right: 4px;
+}
+
 /* ===== CONTACT ===== */
 .contact {
     background: var(--bg-alt);
@@ -993,6 +1099,10 @@ img {
     }
 
     .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cert-grid {
         grid-template-columns: 1fr;
     }
 
